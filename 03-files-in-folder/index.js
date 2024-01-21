@@ -19,7 +19,7 @@ fs.readdir('./03-files-in-folder/secret-folder', (error, files) => {
         const name = path.basename(file, `.${extname}`);
         const size = (stats.size / 1024).toFixed(3);
 
-        console.log(`${name}-${extname}-${size}kb`);
+        console.log(`${name}.${extname} ${size}kb`);
       }
     });
   });
