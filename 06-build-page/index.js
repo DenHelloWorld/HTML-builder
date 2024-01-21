@@ -1,7 +1,7 @@
 const fs = require('fs').promises;
 const fse = require('fs-extra');
 const path = require('path');
-
+//
 async function buildPage() {
   const dir = '06-build-page';
   await fs.mkdir(path.join(dir, 'project-dist'), { recursive: true });
